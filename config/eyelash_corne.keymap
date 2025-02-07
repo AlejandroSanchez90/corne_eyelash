@@ -25,6 +25,14 @@
 
 / {
     behaviors {
+        leader: leader {
+            compatible = "zmk,behavior-leader-key";
+            #binding-cells = <0>;
+            de_ae { sequence = <A E>; bindings = <&de_ae>; };
+            de_oe { sequence = <O E>; bindings = <&de_oe>; };
+            de_ue { sequence = <U E>; bindings = <&de_ue>; };
+        };
+
         brackets_dance_opening: brackets_dance_opening {
             compatible = "zmk,behavior-tap-dance";
             label = "BRACKETS_DANCE_OPENING";
@@ -209,10 +217,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R      &kp T                      &kp UP                     &kp Y   &kp U      &kp I                         &kp O  &kp P                    &hashtag_comment
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D     &kp F      &kp G            &kp LEFT  &kt LEFT_SHIFT  &kp RIGHT  &kp H   &kp J      &kp K                         &kp L  &apostrophes             &kp LEFT_ALT
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V      &kp B  &tog 5              &kp DOWN                   &kp N   &kp M      &hold_tap_mo_kp_simple 1 DOT  &mo 3  &brackets_dance_opening  &brackets_dance_closing
-                                &kp LGUI  &kp SPACE  &mo 2                                                 &trans  &kp ENTER  &kp LC(LS(RIGHT))
+&kp TAB           &kp Q  &kp W  &kp E     &kp R      &kp T                      &kp UP                     &kp Y    &kp U      &kp I                         &kp O  &kp P                    &hashtag_comment
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D     &kp F      &kp G            &kp LEFT  &kt LEFT_SHIFT  &kp RIGHT  &kp H    &kp J      &kp K                         &kp L  &apostrophes             &kp LEFT_ALT
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V      &kp B  &tog 5              &kp DOWN                   &kp N    &kp M      &hold_tap_mo_kp_simple 1 DOT  &mo 3  &brackets_dance_opening  &brackets_dance_closing
+                                &kp LGUI  &kp SPACE  &mo 2                                                 &leader  &kp ENTER  &kp LC(LS(RIGHT))
             >;
 
             sensor-bindings = <&inc_dec_kp DELETE BACKSPACE>;
