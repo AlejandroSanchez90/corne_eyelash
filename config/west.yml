@@ -8,6 +8,8 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -16,5 +18,12 @@ manifest:
       remote: petejohanson
       revision: feat/pointers-with-input-processors
       import: app/west.yml
+    - name: zmk
+      remote: urob
+      revision: v0.1 # Set to desired ZMK version.
+      import: app/west.yml
+    - name: zmk-leader-key
+      remote: urob
+      revision: v0.1 # Set to same version as ZMK.
   self:
     path: config
