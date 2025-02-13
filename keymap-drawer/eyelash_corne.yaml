@@ -44,8 +44,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - NUMBER
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - SYMBOL
   - $$mdi:apple-keyboard-option$$
   NUMBER:
