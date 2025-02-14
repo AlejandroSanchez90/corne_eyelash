@@ -43,10 +43,10 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - LGUI
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - NUMBER
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - SYMBOL
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - $$mdi:keyboard-esc$$
