@@ -45,7 +45,7 @@ layers:
   - LGUI
   - NUMBER
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - SYMBOL
   - $$mdi:apple-keyboard-option$$
   NUMBER:
@@ -154,9 +154,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - SLEEP
   - RGB HUI
-  - {t: '$$mdi:transfer$$', type: trans}
-  - PREVIOUS
+  - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -169,9 +169,9 @@ layers:
   - RGB SAD
   - $$mdi:mouse-left-click-outline$$
   - RGB SAI
-  - PLAY PAUSE
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
+  - PLAY
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
@@ -183,9 +183,9 @@ layers:
   - RGB EFF
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB HUD
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:brightness-7$$
   - $$mdi:brightness-5$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
