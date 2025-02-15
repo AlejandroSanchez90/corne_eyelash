@@ -92,7 +92,7 @@ layers:
   - F10
   - F11
   - $$mdi:apple-keyboard-command$$
-  - {t: NUMBER, type: held}
+  - {type: held}
   - $$mdi:keyboard-space$$
   - RMETA
   - CRTL
@@ -144,7 +144,7 @@ layers:
   - CRTL
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: SYMBOL, type: held}
+  - {type: held}
   - $$mdi:apple-keyboard-option$$
   CRTL:
   - $$mdi:power-standby$$
@@ -190,8 +190,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: CRTL, type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: CRTL, type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
