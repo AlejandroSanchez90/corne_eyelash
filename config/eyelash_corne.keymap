@@ -79,10 +79,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp ESCAPE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK     &kp LPAR          &kp RPAR           &kp BACKSLASH
-&kp LCTRL   &trans    &trans  &trans    &trans    &trans               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
-&kp LSHFT   &kp CAPS  &trans  &trans    &trans    &trans     &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp TILDE     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
-                              &kp LGUI  &mo 3     &kp SPACE                                                             &kp RET    &trans     &kp LEFT_ALT
+&trans  &kp DELETE     &trans            &kp UNDERSCORE  &kp PLUS     &kp PAGE_UP                              &mmv MOVE_UP                     &trans    &trans    &trans  &kp BACKSLASH  &kp PIPE    &trans
+&trans  &kp HOME       &kp END           &kp MINUS       &kp EQUAL    &kp PAGE_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT      &kp K_MENU  &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp K_COPY      &kp K_PASTE  &kp SEMICOLON  &trans                    &mmv MOVE_DOWN                   &trans    &trans    &trans  &trans         &trans      &trans
+                                         &kp ESCAPE      &trans       &kp TAB                                                                   &trans    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -93,7 +93,7 @@
             bindings = <
 &trans      &kp F1          &kp F2           &kp F3           &kp F4           &kp F5                                      &rgb_ug RGB_HUI                   &kp F6         &kp F7        &kp F8      &kp F9   &kp F10  &trans
 &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4               &rgb_ug RGB_SAD  &mkp LCLK        &rgb_ug RGB_SAI  &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PLAY  &kp F11  &kp F12  &trans
-&kp CAPS    &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &trans                     &rgb_ug RGB_HUD                   &kp C_BRI_DEC  &kp C_BRI_UP  &trans      &trans   &trans   &trans
+&kp CAPS    &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &trans                     &rgb_ug RGB_HUD                   &kp C_BRI_DEC  &kp C_BRI_UP  &trans      &trans   &trans   &kp PRINTSCREEN
                                              &kp LCTRL        &kp ENTER        &kp TAB                                                                       &kp BSPC       &kp SPACE     &kp RSHFT
             >;
 
