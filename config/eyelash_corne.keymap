@@ -67,10 +67,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp ESCAPE  &kp N1  &kp N2  &kp N3        &kp N4  &kp N5                                   &mmv MOVE_UP                     &kp N6          &kp N7    &kp N8    &kp N9     &kp N0   &kp BSPC
-&kp LCTRL   &trans  &trans  &trans        &trans  &trans                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT  &trans   &kp F12
-&kp LSHFT   &kp F1  &kp F2  &kp F3        &kp F4  &kp F5     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp F6          &kp F7    &kp F8    &kp F9     &kp F10  &kp F11
-                            &kp LEFT_GUI  &trans  &kp SPACE                                                                 &kp RMETA       &mo 3     &kp RALT
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR        &kp PERCENT                                   &mmv MOVE_UP                     &kp CARET        &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
+&trans  &kp N1           &kp N2       &kp N3     &kp N4            &kp N5                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp N6           &kp N7             &kp N8        &kp N9                &kp N0                 &trans
+&trans  &trans           &kp TILDE    &kp GRAVE  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans        &trans                &kp LEFT_WIN           &trans
+                                      &trans     &trans            &trans                                                                         &kp BACKSPACE    &kp SPACE          &kp COLON
             >;
 
             sensor-bindings = <&scroll_encoder>;
