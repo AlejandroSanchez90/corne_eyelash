@@ -42,8 +42,8 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: CRTL, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, h: NUMBER, s: ':'}
   - {t: '$$mdi:backspace$$', h: SYMBOL}
   - $$mdi:keyboard-space$$
