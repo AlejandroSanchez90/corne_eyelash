@@ -96,7 +96,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-space$$
-  - ':'
+  - $$mdi:apple-keyboard-control$$
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
