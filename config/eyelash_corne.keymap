@@ -22,8 +22,8 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
 &lt {
-    tapping-term-ms = <200>;
-    flavor = "balanced";
+    tapping-term-ms = <165>;
+    flavor = "hold-preferred";
 };
 
 / {
