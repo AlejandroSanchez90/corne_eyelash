@@ -21,11 +21,6 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
-&lt {
-    tapping-term-ms = <165>;
-    flavor = "hold-preferred";
-};
-
 / {
     behaviors {
         td0: td0 {
@@ -33,6 +28,15 @@
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        lthp: lthp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Layer/Tap Hold prefered";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -58,10 +62,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R                   &kp T                               &kp UP                &kp Y            &kp U      &kp I            &kp O    &kp P             &kp DELETE
-&sk LALT   &kp A  &kp S  &kp D     &kp F                   &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J      &kp K            &kp L    &kp SINGLE_QUOTE  &sk RIGHT_ALT
-&sk LSHFT  &kp Z  &kp X  &kp C     &kp V                   &kp B       &kp C_MUTE              &kp DOWN              &kp N            &kp M      &kp COMMA        &kp DOT  &kp FSLH          &sl 3
-                         &sk LGUI  &mt LEFT_CONTROL ENTER  &lt 1 SEMI                                                &lt 2 BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R                   &kp T                                 &kp UP                &kp Y            &kp U      &kp I            &kp O    &kp P             &kp DELETE
+&sk LALT   &kp A  &kp S  &kp D     &kp F                   &kp G                       &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J      &kp K            &kp L    &kp SINGLE_QUOTE  &sk RIGHT_ALT
+&sk LSHFT  &kp Z  &kp X  &kp C     &kp V                   &kp B         &kp C_MUTE              &kp DOWN              &kp N            &kp M      &kp COMMA        &kp DOT  &kp FSLH          &sl 3
+                         &sk LGUI  &mt LEFT_CONTROL ENTER  &lthp 1 SEMI                                                &lt 2 BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
