@@ -89,7 +89,7 @@
 &trans  &kp DELETE     &trans            &kp UNDERSCORE  &kp PLUS     &kp PAGE_UP                              &mmv MOVE_UP                     &trans    &trans    &trans  &kp BACKSLASH  &kp PIPE    &trans
 &trans  &kp HOME       &kp END           &kp MINUS       &kp EQUAL    &kp PAGE_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT      &kp K_MENU  &trans
 &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp K_COPY      &kp K_PASTE  &kp SEMICOLON  &trans                    &mmv MOVE_DOWN                   &trans    &trans    &trans  &trans         &trans      &trans
-                                         &kp ESCAPE      &trans       &kp TAB                                                                   &trans    &trans    &trans
+                                         &kp LEFT_META   &kp ESCAPE   &kp TAB                                                                   &trans    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
