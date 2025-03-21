@@ -141,8 +141,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - LEFT META
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
