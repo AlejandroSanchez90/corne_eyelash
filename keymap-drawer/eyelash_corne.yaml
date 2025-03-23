@@ -104,7 +104,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - _
   - +
-  - PgUp
+  - <
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -117,7 +117,7 @@ layers:
   - END
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - PgDn
+  - '>'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -128,8 +128,8 @@ layers:
   - MENU
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - <
-  - '>'
+  - PgDn
+  - PgUp
   - COPY
   - PASTE
   - {t: ;, s: ':'}
