@@ -48,7 +48,7 @@ layers:
   - {t: ;, h: NUMBER, s: ':'}
   - {t: '$$mdi:backspace$$', h: SYMBOL}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
@@ -143,7 +143,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - LEFT META
   - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-space$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
