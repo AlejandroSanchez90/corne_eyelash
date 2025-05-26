@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -142,7 +142,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - LEFT META
-  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
