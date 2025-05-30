@@ -79,6 +79,17 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        workspaces: workspaces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_3) &kp LA(NUMBER_1) &kp LA(NUMBER_2)>;
+            label = "WORKSPACES";
+            wait-ms = <200>;
+            tap-ms = <100>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -109,7 +120,7 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp DELETE     &trans       &kp UNDERSCORE  &kp PLUS     &kp LESS_THAN                               &mmv MOVE_UP                     &trans    &trans    &trans  &kp BACKSLASH  &kp PIPE    &trans
+&trans  &kp DELETE     &trans       &kp UNDERSCORE  &kp PLUS     &kp LESS_THAN                               &mmv MOVE_UP                     &trans    &trans    &trans  &kp BACKSLASH  &kp PIPE    &workspaces
 &trans  &none          &none        &kp MINUS       &kp EQUAL    &kp GREATER_THAN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT      &kp K_MENU  &trans
 &trans  &kp PAGE_DOWN  &kp PAGE_UP  &kp K_COPY      &kp K_PASTE  &kp SEMICOLON     &trans                    &mmv MOVE_DOWN                   &trans    &trans    &trans  &trans         &trans      &trans
                                     &kp LEFT_META   &kp ESCAPE   &kp SPACE                                                                    &trans    &trans    &trans
