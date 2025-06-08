@@ -95,19 +95,19 @@
         workspaces_work: workspaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_1) &kp LA(NUMBER_3) &kp LA(NUMBER_2)>;
+            bindings = <&kp LA(NUMBER_3) &kp LA(NUMBER_2)>;
             label = "WORKSPACES";
-            wait-ms = <200>;
-            tap-ms = <100>;
+            wait-ms = <50>;
+            tap-ms = <50>;
         };
 
         workspaces_fun: workspaces_fun {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_1) &kp LA(NUMBER_6) &kp LA(N5)>;
+            bindings = <&kp LA(NUMBER_6) &kp LA(N5)>;
             label = "WORKSPACES_FUN";
-            wait-ms = <200>;
-            tap-ms = <100>;
+            wait-ms = <50>;
+            tap-ms = <50>;
         };
     };
 
