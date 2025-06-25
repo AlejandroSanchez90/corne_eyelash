@@ -95,7 +95,7 @@
         workspaces_work: workspaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_3) &kp LA(NUMBER_2)>;
+            bindings = <&kp LA(NUMBER_3) &kp LA(NUMBER_2) &kp C_PAUSE>;
             label = "WORKSPACES";
             wait-ms = <50>;
             tap-ms = <50>;
@@ -120,7 +120,7 @@
 &kp TAB    &kp Q  &kp W  &kp E     &kp R                   &kp T                                 &kp UP                &kp Y              &kp U      &kp I            &kp O    &kp P             &kp DELETE
 &kp LALT   &kp A  &kp S  &kp D     &kp F                   &kp G                       &kp LEFT  &kp ENTER  &kp RIGHT  &kp H              &kp J      &kp K            &kp L    &kp SINGLE_QUOTE  &kp RIGHT_ALT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V                   &kp B         &kp C_MUTE              &kp DOWN              &kp N              &kp M      &kp COMMA        &kp DOT  &kp FSLH          &mo 3
-                         &kp LGUI  &mt LEFT_CONTROL ENTER  &lthp 1 SEMI                                                &lthp 2 BACKSPACE  &kp SPACE  &sk RIGHT_SHIFT
+                         &kp LGUI  &mt LEFT_CONTROL ENTER  &lthp 1 SEMI                                                &lthp 2 BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
