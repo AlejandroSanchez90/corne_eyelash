@@ -48,7 +48,7 @@ layers:
   - {t: ;, h: NUMBER, s: ':'}
   - {t: '$$mdi:backspace$$', h: SYMBOL}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:apple-keyboard-shift$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
