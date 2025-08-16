@@ -117,10 +117,10 @@
             tap-ms = <50>;
         };
 
-        keep_awake: keep_awake {
+        keep: keep_awake {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&macro_wait_time 3000>, <&keep_awake>;
+            bindings = <&kp A>, <&macro_wait_time 3000>, <&keep>;
 
             label = "KEEP_AWAKE";
         };
@@ -179,10 +179,10 @@
 
         gaming {
             bindings = <
-&trans  &trans       &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &keep_awake  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &keep   &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
