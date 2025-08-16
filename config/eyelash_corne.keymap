@@ -61,6 +61,13 @@
             require-prior-idle-ms = <80>;
             hold-trigger-key-positions = <16 17 18 5 4 3>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-key-toggle";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <1>;
+            toggle-mode = "flip";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -108,6 +115,14 @@
             label = "WORKSPACES_FUN";
             wait-ms = <50>;
             tap-ms = <50>;
+        };
+
+        keep_awake: keep_awake {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&macro_wait_time 3000>, <&keep_awake>;
+
+            label = "KEEP_AWAKE";
         };
     };
 
@@ -164,10 +179,10 @@
 
         gaming {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &keep_awake  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
