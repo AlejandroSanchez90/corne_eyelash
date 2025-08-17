@@ -61,13 +61,6 @@
             require-prior-idle-ms = <80>;
             hold-trigger-key-positions = <16 17 18 5 4 3>;
         };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-key-toggle";
-            label = "NEW_BEHAVIOR";
-            #binding-cells = <1>;
-            toggle-mode = "flip";
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -181,7 +174,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &keep   &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
