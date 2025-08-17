@@ -61,6 +61,15 @@
             require-prior-idle-ms = <80>;
             hold-trigger-key-positions = <16 17 18 5 4 3>;
         };
+
+        keep_awake_toggle: keep_awake_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KEEP_AWAKE_TOGGLE";
+            bindings = <&stop_macro>, <&start_macro>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -117,6 +126,20 @@
 
             label = "KEEP_AWAKE";
         };
+
+        start_macro: start_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 4 &keep>;
+            label = "START_MACRO";
+        };
+
+        stop_macro: stop_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 0>;
+            label = "STOP_MACRO";
+        };
     };
 
     keymap {
@@ -172,10 +195,10 @@
 
         gaming {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &keep   &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &trans                  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &keep_awake_toggle 0 0  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
