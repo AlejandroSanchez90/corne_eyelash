@@ -95,7 +95,7 @@
         workspaces_work: workspaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_3) &kp LA(NUMBER_2) &kp C_PAUSE>;
+            bindings = <&kp LA(NUMBER_3) &kp LA(NUMBER_2) &kp C_STOP>;
             label = "WORKSPACES";
             wait-ms = <50>;
             tap-ms = <50>;
